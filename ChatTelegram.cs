@@ -78,11 +78,18 @@ namespace ChatGPT
                 else
                 {
                     Completion cp = chatGPTClass.GetChatText(messageText);
-                    Console.WriteLine($"Sending: \"{cp.choices[0].text}\"");
-                    Message sentMessage = await botClient.SendTextMessageAsync(
+                    try{
+                      Console.WriteLine($"Sending: \"{cp.choices[0].text}\"");
+                      Message sentMessage = await botClient.SendTextMessageAsync(
                         chatId: chatId,
                         text: cp.choices[0].text,
                         cancellationToken: cancellationToken);
+                    }catch(Exception ex){
+                      Message sentMessage = await botClient.SendTextMessageAsync(
+                        chatId: chatId,
+                        text: "null",//cp.choices[0].text,
+                        cancellationToken: cancellationToken);
+                    }
                 }
             }
 
