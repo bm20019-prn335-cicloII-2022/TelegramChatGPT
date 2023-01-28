@@ -1,0 +1,23 @@
+{
+  "Name": "default",
+  "SessionToken": null,
+  "AccessToken": null,
+  "Conversations": [
+    {
+      "Id": "default",
+      "Created": "2023-01-27T13:02:20.8978251-06:00",
+      "Updated": "0001-01-01T00:00:00",
+      "ConversationId": null,
+      "ParentMessageId": "00a5f454-9cc9-46fa-800d-c64454dd7af7"
+    },
+    {
+      "Id": "a-unique-string-id",
+      "Created": "2023-01-27T13:06:18.7529647-06:00",
+      "Updated": "0001-01-01T00:00:00",
+      "ConversationId": null,
+      "ParentMessageId": "3dedff03-6293-4c09-ac05-7c846c42819d"
+    }
+  ],
+  "AccessTokenExpiresAt": null,
+  "AccountType": 0
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wkUbn5Om9tLGnwXOBad9/VyN47dnk8CCK5K8y2VQVfHy8kvCchHWrygvUVScH1zVb44vhuBTO0Ff0WoYEXBeUg==",
+  "success": true,
+  "projectFilePath": "/home/alberto/Repositorio/ChatGPT/ChatGPT.csproj",
+  "expectedPackageFiles": [
+    "/home/alberto/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/home/alberto/.nuget/packages/telegram.bot/18.0.0/telegram.bot.18.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
