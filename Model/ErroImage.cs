@@ -1,6 +1,5 @@
 namespace ErrorImage
 {
-    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class Error
     {
         public object code { get; set; }

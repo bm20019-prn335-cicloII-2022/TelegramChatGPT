@@ -5,37 +5,8 @@ namespace ChatGPT
 {
     public class ChatGPTClass
     {
-        public enum models
-        {
-            babbage,
-            ada,
-            davinci,
-            text_davinci_001,
-            curie_instruct_beta,
-            text_davinci_003,
-            code_cushman_001,
-            code_davinci_002,
-            text_ada_001,
-            text_davinci_002,
-            text_curie_001,
-            davinci_instruct_beta,
-            text_babbage_001,
-            curie
-        }
-
-        public enum Resolution
-        {
-            x256,
-            x512,
-            x1024
-        }
-
         private string Token { get; set; }
 
-        public ChatGPTClass()
-        {
-
-        }
         public ChatGPTClass(string token)
         {
             this.Token = token;
@@ -63,12 +34,13 @@ namespace ChatGPT
 
             Images img = JsonSerializer.Deserialize<Images>(responseJSON);
 
-            try{
+            try
+            {
                 img.data.Equals(null);
                 return img;
-                 
-            }catch(Exception ex){
-                Console.WriteLine("Segunda pasada");
+            }
+            catch (Exception ex)
+            {
                 Images imgExection = new Images();
                 var dat = new Data();
                 dat.url = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/640px-OpenAI_Logo.svg.png";
@@ -111,6 +83,31 @@ namespace ChatGPT
                 default:
                     return "512x512";
             }
+        }
+
+        public enum models
+        {
+            babbage,
+            ada,
+            davinci,
+            text_davinci_001,
+            curie_instruct_beta,
+            text_davinci_003,
+            code_cushman_001,
+            code_davinci_002,
+            text_ada_001,
+            text_davinci_002,
+            text_curie_001,
+            davinci_instruct_beta,
+            text_babbage_001,
+            curie
+        }
+
+        public enum Resolution
+        {
+            x256,
+            x512,
+            x1024
         }
     }
 }

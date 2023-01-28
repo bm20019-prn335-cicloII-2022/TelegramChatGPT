@@ -1,4 +1,3 @@
-using System.Runtime.Serialization.Json;
 using System.Text.Json;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
@@ -46,7 +45,7 @@ namespace ChatGPT
 
             var me = await botClient.GetMeAsync();
 
-            Console.WriteLine($"Start listening for @{me.Username}");
+            Console.WriteLine($"Empezando a escuchar @{me.Username}");
             Console.ReadLine();
 
             // Send cancellation request to stop bot
